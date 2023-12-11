@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                         Provider.of<MyController>(context, listen: false)
                             .generate(),
                     child: Image.asset(
-                      diceProvider.diceImagesRed[diceProvider.randomNumber],
+                      diceProvider.selectedDiceList[diceProvider.randomNumber],
                       scale: 2,
                     ),
                   ),

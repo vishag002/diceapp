@@ -6,6 +6,8 @@ import 'package:diceapp/utils/image_const.dart';
 class MyController with ChangeNotifier {
   int randomNumber = 5;
   bool isLoading = false;
+
+  List selectedDiceList = [];
   List diceImagesRed = [
     ImageConstantsRed.dice1,
     ImageConstantsRed.dice2,
@@ -32,6 +34,11 @@ class MyController with ChangeNotifier {
     });
     randomNumber = Random().nextInt(6);
     print(randomNumber);
+    notifyListeners();
+  }
+
+  onDiceColorSelection(List selectedDice) {
+    selectedDiceList = selectedDice;
     notifyListeners();
   }
 }
