@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        home: HomeScreen(),
+        // home: HomeScreen(),
+        home: Homepage(),
       ),
     );
   }

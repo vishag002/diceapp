@@ -1,4 +1,4 @@
-import 'package:diceapp/controller/mycontroller.dart';
+/* import 'package:diceapp/controller/mycontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                         Provider.of<MyController>(context, listen: false)
                             .generate(),
                     child: Image.asset(
-                      diceProvider.diceImagesRed[diceProvider.randomNumber],
+                      diceProvider.diceImagesWhite[diceProvider.randomNumber],
                       scale: 2,
                     ),
                   ),
@@ -45,4 +45,4 @@ class HomeScreen extends StatelessWidget {
       ), */
     );
   }
-}
+} */
